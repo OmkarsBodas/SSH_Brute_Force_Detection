@@ -1,0 +1,16 @@
+name: SSH Brute Force Detection
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Python Detection
+        run: python3 detect.py
