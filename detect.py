@@ -28,7 +28,7 @@ alert_found = False
 
 for ip, count in failed_ips.items():
 
-    if count >= 5:
+    if count >= 10:
         print(f"ALERT: {ip} has {count} failed login attempts")
         alert_found = True
 
