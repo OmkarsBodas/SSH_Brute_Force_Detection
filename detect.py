@@ -2,7 +2,7 @@ import re
 from collections import Counter
 
 # Step 1: Read the SSH log file...............................................
-with open("OpenSSH_2k", "r") as file:
+with open("OpenSSH_2k.log", "r") as file:
     logs = file.readlines()
 
 # Step 2: Create a dictionary to count failed attempts........................
